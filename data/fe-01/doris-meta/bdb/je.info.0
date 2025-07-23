@@ -1,0 +1,17 @@
+2025-07-23 14:56:04.610 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] No server auth method
+2025-07-23 14:56:04.617 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] Started ServiceDispatcher. HostPort=fe-01:9010
+2025-07-23 14:56:04.618 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] DataChannel factory: com.sleepycat.je.rep.utilint.net.SimpleChannelFactory
+2025-07-23 14:56:04.737 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] DTVLSN at start:0
+2025-07-23 14:56:04.741 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] node:NullNode(-1) state change from DETACHED to UNKNOWN
+2025-07-23 14:56:04.793 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] Current group size: 0
+2025-07-23 14:56:04.794 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] New node fe_03ca86f2_d268_4f36_8dc5_174e6ac54983(-1) unknown to rep group
+2025-07-23 14:56:04.797 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] Master changed to fe_03ca86f2_d268_4f36_8dc5_174e6ac54983
+2025-07-23 14:56:04.797 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] Nascent group. fe_03ca86f2_d268_4f36_8dc5_174e6ac54983 is master by virtue of being the first node.
+2025-07-23 14:56:04.798 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] node:fe_03ca86f2_d268_4f36_8dc5_174e6ac54983(1) state change from UNKNOWN to MASTER
+2025-07-23 14:56:04.899 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] Successfully added node:fe_03ca86f2_d268_4f36_8dc5_174e6ac54983(1) HostPort = 172.20.80.2: 9010 [ELECTABLE]
+2025-07-23 14:56:04.914 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] Updated minimum JE group version to 7.5.0
+2025-07-23 14:56:04.916 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] Node fe_03ca86f2_d268_4f36_8dc5_174e6ac54983 started
+2025-07-23 14:56:04.917 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] node:NullNode(-1) state change from MASTER to UNKNOWN
+2025-07-23 14:56:04.918 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] node:fe_03ca86f2_d268_4f36_8dc5_174e6ac54983(1) state change from UNKNOWN to MASTER
+2025-07-23 14:56:04.918 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] Feeder manager accepting requests.
+2025-07-23 14:56:04.921 UTC INFO [fe_03ca86f2_d268_4f36_8dc5_174e6ac54983] Joining group as master
