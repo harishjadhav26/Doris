@@ -934,3 +934,49 @@ RuntimeLogger I20250723 15:01:07.512038  1225 tablet.cpp:1725] cumulative compac
 RuntimeLogger I20250723 15:01:07.512200  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565175|after cumulative compaction, cumu point:=2
 RuntimeLogger I20250723 15:01:07.512377  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565171|after cumulative compaction, cumu point:=2
 RuntimeLogger I20250723 15:01:09.300614  1136 wal_manager.cpp:489] Scheduled(every 10s) WAL info: [/opt/apache-doris/be/storage/wal: limit 7973214617 Bytes, used 0 Bytes, estimated wal bytes 0 Bytes, available 7973214617 Bytes.];
+RuntimeLogger I20250723 15:01:11.891614  2581 topic_subscriber.cpp:43] [topic_publish]begin handle topic info
+RuntimeLogger I20250723 15:01:11.891804  2581 topic_subscriber.cpp:46] [topic_publish]begin handle topic WORKLOAD_GROUP, size=1
+RuntimeLogger I20250723 15:01:11.891928  2581 workload_group_listener.cpp:67] [topic_publish_wg]update workload group finish, wg info=TG[id = 1, name = normal, cpu_share = 1024, memory_limit = 8.44 GB, enable_memory_overcommit = true, version = 0, cpu_hard_limit = -1, scan_thread_num = 48, max_remote_scan_thread_num = 512, min_remote_scan_thread_num = 8, spill_low_watermark=50, spill_high_watermark=80, is_shutdown=false, query_num=0, read_bytes_per_second=-1, remote_read_bytes_per_second=-1], enable_cpu_hard_limit=false, cgroup cpu_shares=0, cgroup cpu_hard_limit=0, cgroup home path=, list size=1, thread info=[exec num:8, real_num:8, min_num:8, max_num:8],[l_scan num:48, real_num:48, min_num:48, max_num48],[r_scan num:8, real_num:8, min_num:8, max_num:512],[mem_tab_flush num:6, real_num:6, min_num:6, max_num:6]
+RuntimeLogger I20250723 15:01:11.892148  2581 workload_group_manager.cpp:135] [topic_publish_wg]finish clear unused workload group, time cost: 0 ms, deleted group size:0, before wg size=1, after wg size=1
+RuntimeLogger I20250723 15:01:11.892238  2581 topic_subscriber.cpp:50] [topic_publish]finish handle topic WORKLOAD_GROUP
+RuntimeLogger I20250723 15:01:11.892333  2581 topic_subscriber.cpp:46] [topic_publish]begin handle topic WORKLOAD_SCHED_POLICY, size=0
+RuntimeLogger I20250723 15:01:11.892436  2581 workload_sched_policy_listener.cpp:79] [workload_schedule]finish update workload schedule policy, size=0
+RuntimeLogger I20250723 15:01:11.892516  2581 topic_subscriber.cpp:50] [topic_publish]finish handle topic WORKLOAD_SCHED_POLICY
+RuntimeLogger I20250723 15:01:16.573087  1135 load_channel_mgr.cpp:222] cleaning timed out load channels
+RuntimeLogger I20250723 15:01:17.142446  1208 storage_engine.cpp:1191] start to delete unused rowset, size: 0
+RuntimeLogger I20250723 15:01:17.142580  1208 storage_engine.cpp:1219] collected 0 unused rowsets to remove, skipped 0 rowsets due to use count > 1, skipped 0 rowsets due to don't need to delete file, skipped 0 rowsets due to delayed expired timestamp.
+RuntimeLogger I20250723 15:01:17.142632  1208 storage_engine.cpp:1237] removed all collected unused rowsets
+RuntimeLogger I20250723 15:01:17.157727  1246 olap_server.cpp:1187] cooldown producer get tablet num: 0
+RuntimeLogger I20250723 15:01:17.536454  2577 lru_cache_policy.h:188] [MemoryGC] MowDeleteBitmapAggCache not need prune stale, LRUCacheType::SIZE consumption 0 less than CACHE_MIN_PRUNE_SIZE 67108864
+RuntimeLogger I20250723 15:01:17.536625  2577 lru_cache_policy.h:194] [MemoryGC] CreateTabletRRIdxCache not need prune stale, LRUCacheType::NUMBER usage 6 less than CACHE_MIN_PRUNE_NUMBER 1024
+RuntimeLogger I20250723 15:01:17.536690  2577 lru_cache_policy.h:194] [MemoryGC] TabletColumnObjectPool not need prune stale, LRUCacheType::NUMBER usage 57 less than CACHE_MIN_PRUNE_NUMBER 1024
+RuntimeLogger I20250723 15:01:17.536744  2577 lru_cache_policy.h:188] [MemoryGC] DataPageCache not need prune stale, LRUCacheType::SIZE consumption 0 less than CACHE_MIN_PRUNE_SIZE 67108864
+RuntimeLogger I20250723 15:01:17.536803  2577 lru_cache_policy.h:188] [MemoryGC] IndexPageCache not need prune stale, LRUCacheType::SIZE consumption 0 less than CACHE_MIN_PRUNE_SIZE 67108864
+RuntimeLogger I20250723 15:01:17.536856  2577 lru_cache_policy.h:194] [MemoryGC] TabletSchemaCache not need prune stale, LRUCacheType::NUMBER usage 93 less than CACHE_MIN_PRUNE_NUMBER 1024
+RuntimeLogger I20250723 15:01:17.536937  2577 lru_cache_policy.h:188] [MemoryGC] PKIndexPageCache not need prune stale, LRUCacheType::SIZE consumption 0 less than CACHE_MIN_PRUNE_SIZE 67108864
+RuntimeLogger I20250723 15:01:17.537025  2577 lru_cache_policy.h:188] [MemoryGC] PointQueryRowCache not need prune stale, LRUCacheType::SIZE consumption 0 less than CACHE_MIN_PRUNE_SIZE 67108864
+RuntimeLogger I20250723 15:01:17.537122  2577 lru_cache_policy.h:188] [MemoryGC] SegmentCache not need prune stale, LRUCacheType::SIZE consumption 0 less than CACHE_MIN_PRUNE_SIZE 67108864
+RuntimeLogger I20250723 15:01:17.537215  2577 lru_cache_policy.h:194] [MemoryGC] SchemaCache not need prune stale, LRUCacheType::NUMBER usage 0 less than CACHE_MIN_PRUNE_NUMBER 1024
+RuntimeLogger I20250723 15:01:17.537317  2577 lru_cache_policy.h:171] [MemoryGC] CommonObjLRUCache prune stale start, consumption 0, usage 0
+RuntimeLogger I20250723 15:01:17.537432  2577 lru_cache_policy.h:181] [MemoryGC] CommonObjLRUCache prune stale 0 entries, 0 bytes, cost 33600, 4 times prune
+RuntimeLogger I20250723 15:01:17.537498  2577 lru_cache_policy.h:194] [MemoryGC] PointQueryLookupConnectionCache not need prune stale, LRUCacheType::NUMBER usage 0 less than CACHE_MIN_PRUNE_NUMBER 1024
+RuntimeLogger I20250723 15:01:17.537593  2577 lru_cache_policy.h:188] [MemoryGC] QueryCache not need prune stale, LRUCacheType::SIZE consumption 0 less than CACHE_MIN_PRUNE_SIZE 67108864
+RuntimeLogger I20250723 15:01:17.537681  2577 lru_cache_policy.h:188] [MemoryGC] InvertedIndexSearcherCache not need prune stale, LRUCacheType::SIZE consumption 0 less than CACHE_MIN_PRUNE_SIZE 67108864
+RuntimeLogger I20250723 15:01:17.537765  2577 lru_cache_policy.h:188] [MemoryGC] InvertedIndexQueryCache not need prune stale, LRUCacheType::SIZE consumption 0 less than CACHE_MIN_PRUNE_SIZE 67108864
+RuntimeLogger I20250723 15:01:18.215176  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565177|after cumulative compaction, cumu point:=2
+RuntimeLogger I20250723 15:01:18.215471  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565173|after cumulative compaction, cumu point:=2
+RuntimeLogger I20250723 15:01:18.215628  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565175|after cumulative compaction, cumu point:=2
+RuntimeLogger I20250723 15:01:18.215767  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565171|after cumulative compaction, cumu point:=2
+RuntimeLogger I20250723 15:01:19.372715  1136 wal_manager.cpp:489] Scheduled(every 10s) WAL info: [/opt/apache-doris/be/storage/wal: limit 7973188403 Bytes, used 0 Bytes, estimated wal bytes 0 Bytes, available 7973188403 Bytes.];
+RuntimeLogger I20250723 15:01:22.809499  1348 data_dir.cpp:882] path: /opt/apache-doris/be/storage total capacity: 393638838272, available capacity: 79731884032, usage: 0.797449, in_use: 1
+RuntimeLogger I20250723 15:01:22.809725  1348 storage_engine.cpp:431] get root path info cost: 0 ms. tablet counter: 22
+RuntimeLogger I20250723 15:01:24.101497  2580 heartbeat_server.cpp:67] get heartbeat from FE.host:172.20.80.2, rpc port:9020, cluster id:1477282050, frontend_info:TFrontendInfo(coordinator_address=TNetworkAddress(hostname=172.20.80.2, port=9020), process_uuid=1753282570816) , counter:25, BE start time: 1753282637523
+RuntimeLogger I20250723 15:01:28.818025  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565177|after cumulative compaction, cumu point:=2
+RuntimeLogger I20250723 15:01:28.818200  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565173|after cumulative compaction, cumu point:=2
+RuntimeLogger I20250723 15:01:28.818284  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565175|after cumulative compaction, cumu point:=2
+RuntimeLogger I20250723 15:01:28.818392  1225 tablet.cpp:1725] cumulative compaction meet delete rowset, increase cumu point without other operation.|tablet id:=1753282565171|after cumulative compaction, cumu point:=2
+RuntimeLogger I20250723 15:01:29.445535  1136 wal_manager.cpp:489] Scheduled(every 10s) WAL info: [/opt/apache-doris/be/storage/wal: limit 7973175296 Bytes, used 0 Bytes, estimated wal bytes 0 Bytes, available 7973175296 Bytes.];
+RuntimeLogger I20250723 15:01:37.158083  1246 olap_server.cpp:1187] cooldown producer get tablet num: 0
+RuntimeLogger I20250723 15:01:38.759546  1349 tablet_manager.cpp:1078] find expired transactions for 0 tablets
+RuntimeLogger I20250723 15:01:38.759864  1349 tablet_manager.cpp:1115] success to build all report tablets info. tablet_count=22
+RuntimeLogger I20250723 15:01:39.516952  1136 wal_manager.cpp:489] Scheduled(every 10s) WAL info: [/opt/apache-doris/be/storage/wal: limit 7973188403 Bytes, used 0 Bytes, estimated wal bytes 0 Bytes, available 7973188403 Bytes.];

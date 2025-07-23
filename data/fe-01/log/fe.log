@@ -2172,3 +2172,33 @@ RuntimeLogger 2025-07-23 15:01:11,830 INFO (binlog-gcer|171) [BinlogGcer.runAfte
 RuntimeLogger 2025-07-23 15:01:11,890 INFO (TopicPublisher|171) [TopicPublisherThread.runAfterCatalogReady():67] [topic_publish]begin publish topic info
 RuntimeLogger 2025-07-23 15:01:11,893 INFO (topic-publish-thread-1|171) [TopicPublisherThread$TopicPublishWorker.run():165] [topic_publish]publish topic info to be 172.20.80.5 success, time cost=3 ms, details: WORKLOAD_GROUP=1  WORKLOAD_SCHED_POLICY=0 
 RuntimeLogger 2025-07-23 15:01:12,099 INFO (InsertOverwriteDropDirtyPartitions|171) [InsertOverwriteManager.runAfterCatalogReady():368] start clean insert overwrite temp partitions
+RuntimeLogger 2025-07-23 15:01:20,767 INFO (thrift-server-pool-0|171) [ReportHandler.handleReport():230] receive report from be 1753282565058. type: TASK, report version -1, current queue size: 1
+RuntimeLogger 2025-07-23 15:01:20,767 INFO (report-thread|171) [ReportHandler.taskReport():671] finished to handle task report from backend 1753282565058-172.20.80.5, diff task num: 0, publishTaskSize: 0, runningTasks: [], cost: 0 ms.
+RuntimeLogger 2025-07-23 15:01:22,099 INFO (InsertOverwriteDropDirtyPartitions|171) [InsertOverwriteManager.runAfterCatalogReady():368] start clean insert overwrite temp partitions
+RuntimeLogger 2025-07-23 15:01:22,810 INFO (thrift-server-pool-1|171) [ReportHandler.handleReport():230] receive report from be 1753282565058. type: DISK, report version -1, current queue size: 1
+RuntimeLogger 2025-07-23 15:01:22,810 INFO (report-thread|171) [ReportHandler.diskReport():681] begin to handle disk report from backend 1753282565058
+RuntimeLogger 2025-07-23 15:01:22,811 INFO (report-thread|171) [ReportHandler.diskReport():692] finished to handle disk report from backend: 1753282565058, disk size: 1, bad disk: [], cost: 1 ms
+RuntimeLogger 2025-07-23 15:01:22,811 INFO (report-thread|171) [ReportHandler.cpuReport():697] begin to handle cpu report from backend 1753282565058
+RuntimeLogger 2025-07-23 15:01:22,811 INFO (report-thread|171) [ReportHandler.cpuReport():711] finished to handle cpu report from backend 1753282565058, cost: 0 ms
+RuntimeLogger 2025-07-23 15:01:26,831 INFO (binlog-gcer|171) [BinlogManager.gc():608] begin gc binlog
+RuntimeLogger 2025-07-23 15:01:26,831 INFO (binlog-gcer|171) [BinlogManager.gc():619] gc binlog, dbBinlogMap is null
+RuntimeLogger 2025-07-23 15:01:26,831 INFO (binlog-gcer|171) [BinlogGcer.runAfterCatalogReady():63] no gc binlog
+RuntimeLogger 2025-07-23 15:01:31,110 INFO (colocate group clone checker|171) [ColocateTableCheckerAndBalancer.matchGroups():594] finished to check tablets. unhealth/total/added/in_sched/not_ready/exceed_limit: 0/0/0/0/0/0, cost: 0 ms
+RuntimeLogger 2025-07-23 15:01:31,153 INFO (tablet checker|171) [TabletChecker.checkTablets():351] finished to check tablets. unhealth/total/added/in_sched/not_ready/exceed_limit: 0/22/0/0/0/0,cost: 2 ms
+RuntimeLogger 2025-07-23 15:01:32,100 INFO (InsertOverwriteDropDirtyPartitions|171) [InsertOverwriteManager.runAfterCatalogReady():368] start clean insert overwrite temp partitions
+RuntimeLogger 2025-07-23 15:01:35,768 INFO (thrift-server-pool-2|171) [ReportHandler.handleReport():230] receive report from be 1753282565058. type: TASK, report version -1, current queue size: 1
+RuntimeLogger 2025-07-23 15:01:35,768 INFO (report-thread|171) [ReportHandler.taskReport():671] finished to handle task report from backend 1753282565058-172.20.80.5, diff task num: 0, publishTaskSize: 0, runningTasks: [], cost: 0 ms.
+RuntimeLogger 2025-07-23 15:01:38,762 INFO (thrift-server-pool-0|171) [ReportHandler.handleReport():230] receive report from be 1753282565058. type: TABLET, report version 175328262000027, current queue size: 1
+RuntimeLogger 2025-07-23 15:01:38,762 INFO (report-thread|171) [ReportHandler.storagePolicyReport():382] backend[1753282565058] reports policies [], report resources: []
+RuntimeLogger 2025-07-23 15:01:38,762 INFO (report-thread|171) [ReportHandler.tabletReport():491] backend[1753282565058] reports 22 tablet(s). report version: 175328262000027
+RuntimeLogger 2025-07-23 15:01:38,767 INFO (report-thread|171) [TabletInvertedIndex.tabletReport():312] finished to do tablet diff with backend[1753282565058]. fe tablet num: 22, backend tablet num: 22. sync: 0. metaDel: 0. foundInMeta: 22. migration: 0. backend partition num: 6, backend need update: 0. found invalid transactions 0(partitions: 0). found republish transactions 0(partitions: 0). tabletToUpdate: 0. need recovery: 0. cost: 4 ms
+RuntimeLogger 2025-07-23 15:01:38,768 INFO (report-thread|171) [ReportHandler.tabletReport():597] finished to handle tablet report from backend[1753282565058] cost: 6 ms
+RuntimeLogger 2025-07-23 15:01:41,297 INFO (recycle bin|171) [CatalogRecycleBin.erasePartition():522] erasePartition eraseNum: 0 cost: 0ms
+RuntimeLogger 2025-07-23 15:01:41,297 INFO (recycle bin|171) [CatalogRecycleBin.eraseTable():403] eraseTable eraseNum: 0 cost: 0ms
+RuntimeLogger 2025-07-23 15:01:41,297 INFO (recycle bin|171) [CatalogRecycleBin.eraseDatabase():270] eraseDatabase eraseNum: 0 cost: 0ms
+RuntimeLogger 2025-07-23 15:01:41,831 INFO (binlog-gcer|171) [BinlogManager.gc():608] begin gc binlog
+RuntimeLogger 2025-07-23 15:01:41,832 INFO (binlog-gcer|171) [BinlogManager.gc():619] gc binlog, dbBinlogMap is null
+RuntimeLogger 2025-07-23 15:01:41,832 INFO (binlog-gcer|171) [BinlogGcer.runAfterCatalogReady():63] no gc binlog
+RuntimeLogger 2025-07-23 15:01:41,894 INFO (TopicPublisher|171) [TopicPublisherThread.runAfterCatalogReady():67] [topic_publish]begin publish topic info
+RuntimeLogger 2025-07-23 15:01:41,897 INFO (topic-publish-thread-2|171) [TopicPublisherThread$TopicPublishWorker.run():165] [topic_publish]publish topic info to be 172.20.80.5 success, time cost=3 ms, details: WORKLOAD_GROUP=1  WORKLOAD_SCHED_POLICY=0 
+RuntimeLogger 2025-07-23 15:01:42,100 INFO (InsertOverwriteDropDirtyPartitions|171) [InsertOverwriteManager.runAfterCatalogReady():368] start clean insert overwrite temp partitions
